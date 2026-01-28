@@ -1,0 +1,22 @@
+{
+  "xsappname": "cap-business-service",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    { "name": "$XSAPPNAME.OnboardingViewer" },
+    { "name": "$XSAPPNAME.OnboardingAdmin" }
+  ],
+  "role-templates": [
+    {
+      "name": "OnboardingViewer",
+      "scope-references": [
+        "$XSAPPNAME.OnboardingViewer"
+      ]
+    },
+    {
+      "name": "OnboardingAdmin",
+      "scope-references": [
+        "$XSAPPNAME.OnboardingAdmin"
+      ]
+    }
+  ]
+}
