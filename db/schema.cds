@@ -2,6 +2,7 @@ using { cuid } from '@sap/cds/common';
 
 namespace cap.business.customer;
 
+@odata.draft.enabled
 entity CustomerOnboarding : cuid {
   customerName        : String(100);
   country             : String(3);
